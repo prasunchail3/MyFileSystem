@@ -14,3 +14,7 @@ This is a simple file system. Here arrays are used to create an abstraction of h
   10.  myfs> **write** "drive_name\file_name" /*Write to **file_name** in **drive_name** */
   11.  myfs> **display** "drive_name\file_name" /*Display content of **file_name** in **drive_name** */
   12.  myfs> **exit** /* terminate the process */
+
+Limitations:
+  1. No directory within directory
+  
