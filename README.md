@@ -3,14 +3,14 @@
 This is a simple file system. Here arrays are used to create an abstraction of hard disk. The file system is implemented on this abstract hard disk. The various operations that can be performed are as follows:
 
    2.  myfs> /* prompt given by this program */
-   3.  myfs> mkfs "Your Drive Name" "block Size" "Total Size"MB /* creates the filesystem named "Drive name", with specified blocksize  */
-   5.  myfs> use "Your Drive name" as C: /* the filesystem on "Your Drive name" will henceforth be accessed as C: */
-   7.  myfs> cp "Source File" C:\"dest File" /* copy the file "Source File" from os to the filesystem C: as "Dest File" */
-   8.  myfs> ls C: /* see the contents of the filesystem C: */
-   9.  myfs> cp C:\"Sourece File" C:\"Dest File" /* copy the file "Source File" from C: to the filesystem C: as "dest File" */
-  12.  myfs> rm C:\"File-Name" /* Delete the "File" from C: */
-  13.  myfs> mv D:\"Source File" C:\"Dest File"  /* Move  "Source File" of D: to "Dest File" in C: */ 
-  14.  myfs> create "Drive Name" "File Name" /*Create a file "File Name" in the drive "Drive Name"*/
-  15.  myfs> write "Drive_Name:\File_Name" /*Write to "File_Name" in "Drive_Name"*/
-  16.  myfs> display "Drive_Name:\File_Name" /*Display content of "File_Name" in "Drive_Name"*/
+   3.  myfs> mkfs drive_name block_size total_size /* creates a filesystem named drive_name, with specified block_size in Bytes and total_size in MB  */
+   5.  myfs> use drive_name as other_name /* the filesystem on drive_name will henceforth be accessed as other_name */
+   7.  myfs> cp source_file drive_name\dest_file /* copy the file source_file from OS to the filesystem drive_name as dest_file */
+   8.  myfs> ls drive_name /* see the contents of the filesystem drive_name */
+   9.  myfs> cp drive_1\source_file drive_2\dest_file /* copy the file source_file from drive_1 to the filesystem drive_2 as dest_file */
+  12.  myfs> rm drive_name\file_name /* Delete the file_name from drive_name */
+  13.  myfs> mv drive_1\source_file drive_2\dest_file  /* move the file source_file from drive_1 to the filesystem drive_2 as dest_file */
+  14.  myfs> create drive_name file_name /*Create a file file_name in the drive drive_name*/
+  15.  myfs> write "drive_name:\file_name" /*Write to "file_name" in "drive_name"*/
+  16.  myfs> display "drive_Name:\file_Name" /*Display content of "file_Name" in "drive_Name"*/
   16.  myfs> exit /* terminate the process */
