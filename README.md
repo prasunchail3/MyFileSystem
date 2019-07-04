@@ -11,6 +11,6 @@ This is a simple file system. Here arrays are used to create an abstraction of h
   12.  myfs> **rm** drive_name\file_name /* Delete the **file_name** from **drive_name** */
   13.  myfs> **mv** drive_1\source_file drive_2\dest_file  /* move the file **source_file** from **drive_1** to the filesystem **drive_2** as **dest_file** */
   14.  myfs> **create** drive_name file_name /*Create a **file_name** in the **drive_name** */
-  15.  myfs> **write** "drive_name:\file_name" /*Write to **file_name** in **drive_name** */
-  16.  myfs> **display** "drive_Name:\file_Name" /*Display content of **file_Name** in **drive_Name** */
+  15.  myfs> **write** "drive_name\file_name" /*Write to **file_name** in **drive_name** */
+  16.  myfs> **display** "drive_Name\file_Name" /*Display content of **file_Name** in **drive_Name** */
   16.  myfs> **exit** /* terminate the process */
